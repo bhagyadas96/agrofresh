@@ -1,19 +1,13 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const timestamps = require('mongoose-timestamp');
 
 
 const FarmerSchema = new Schema({
-
-
     user: { type: Schema.Types.ObjectId, ref: 'User' },
-    name: { type: String },
-    phone: { type: String, required: true },
-    email: { type: String, unique: true },
     location: { type: String },
     pincode: { type: String, required: true },
-    localityOfDelivery: { type: Number }
-
+    localityOfDelivery: { type: Number },
+    adress: [{ type: Schema.Types.ObjectId, ref: 'Address' }]
 });
 
 

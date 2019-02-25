@@ -1,16 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const timestamps = require('mongoose-timestamp');
-
 const CustomerSchema = new Schema({
 
 
     user: { type: Schema.Types.ObjectId, ref: 'User' },
-    name: { type: String },
-    phone: { type: String, required: true },
-    email: { type: String, unique: true },
     pincode: { type: String },
-    location: { type: String }
+    location: { type: String },
+    address: [{ type: Schema.Types.ObjectId, ref: 'Address' }]
 
 });
 
