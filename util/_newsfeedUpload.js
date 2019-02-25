@@ -12,6 +12,6 @@ const Storage = multer.diskStorage({
 });
 
 
-const upload = multer({ storage: Storage }).array("media", 3); //Field name and max count
+const upload = multer({ storage: Storage }).array("image", 3); //Field name and max count
 
 exports.upload = upload

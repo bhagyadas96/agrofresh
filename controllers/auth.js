@@ -1,145 +1,188 @@
-const Farmer = require('../models/farmer');
-const Customer = require('../models/customer');
-const User = require('../models/user');
-const Item = require('../models/item');
-
 var logger = require('../config/logger');
 const jwt = require('jsonwebtoken');
 const config = require('../config/_config');
+var phoneVerification = require('../util/_phoneVerification')(config.API_KEY, config.COUNTRY_CODE);
 
-SALT_WORK_FACTOR = 10;
 
+const User = require('../models/user');
 
-async function login(req, res) {
+async function userSignin(req, res) {
     try {
-        username = req.body.email
-        password = req.body.password
-        const user = await User.findOne({ email: username }).exec();
-        if (user) {
 
-            user.verifyPassword(password, async function(error, data) {
-
-                if (error) {
-                    res.status(400).json({
-                        success: false,
-                        message: 'Bad request'
-                    });
-                }
-                const jwtPayload = { name: user.name, id: user.id };
+        phoneNo = req.body.phone;
+        name = req.body.name;
+        via = req.body.via;
+        if (phoneNo && via && name) {
+            const user = await User.findOne({ phone: phoneNo }).exec() || await User.create({ phone: phoneNo, name: name });
+            if (user) {
+                const jwtPayload = { phone: user.phone, id: user.id };
                 var jwtToken = await jwt.sign(jwtPayload, config.SECRET, {
-                    expiresIn: '5m' // expires in 24 hours
+                    expiresIn: '24h' // expires in 24 hours
                 });
-                res.status(200).json({
-                    success: true,
-                    access_token: jwtToken
+                phoneVerification.requestPhoneVerification(phoneNo, via, async(err, response) => {
+                    if (err) {
+                        res.status(500).json({
+                            success: false,
+                            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation " + err.message
+                        });
+                    } else {
+                        res.status(200).json({
+                            success: true,
+                            access_token: jwtToken
+                        });
+                    }
                 });
-            })
+            }
+        } else {
+            res.status(400).json({
+                success: false,
+                message: 'Bad request'
+            });
+        }
+    } catch (error) {
+        logger.error(error);
+        res.status(500).json({
+            success: false,
+            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+        });
+    }
+}
+
+async function userVerify(req, res) {
+    try {
+
+        token = req.body.otp;
+        phone = req.decoded.phone;
+        const user = await User.findOne({ _id: req.decoded.id, }).exec()
+        if (token && user) {
+            phoneVerification.verifyPhoneToken(phone, token, async(err, response) => {
+                if (err) {
+
+                    res.status(500).json({
+                        success: false,
+                        message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+                    });
+
+                } else {
+                    console.log('Confirm phone success confirming code: ', response);
+                    if (response.success) {
+                        user.set('verified', true);
+                        userSave = await user.save();
+
+                        const jwtPayload = { phone: user.phone, id: user._id };
+                        var jwtToken = await jwt.sign(jwtPayload, config.SECRET, {
+                            expiresIn: "7d" // expires in 7 days
+                        });
+
+
+
+                        res.status(200).json({
+                            success: true,
+                            access_token: jwtToken
+                        });
+                    } else {
+                        res.status(202).json({
+                            success: false,
+                            message: 'invalid verification code'
+                        });
+                    }
+                }
+            });
+        } else {
+            res.status(400).json({
+                success: false,
+                message: 'Bad request'
+            });
         }
 
-
     } catch (error) {
-        logger.error(error.message);
-    }
-}
-
-
-
-
-async function getProfile(req, res) {
-    try {
-        user = req.decoded.id;
-        const farmer = await Farmer.findOne({ user: user, }).exec() || await Customer.findById(user).exec();
-        res.status(200).json({
-            success: true,
-            data: farmer
-        });
-
-    } catch (error) {
-        logger.error(error.message);
-
-        res.status(500).json({
+        logger.error(error);
+        res.json({
             success: false,
             message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
         });
     }
 }
 
-
-async function insertItem(req, res) {
+async function retry(req, res) {
     try {
-        itemName = req.body.itemName
-        itemPrice = req.body.itemPrice
-        quantity = req.body.quantity
-    } catch (error) {
+        phoneNo = req.decoded.phone
+        id = req.decoded.id;
+        via = req.body.via;
 
-    }
-}
+        if (phoneNo && via) {
 
-async function registerUser(req, res) {
-    try {
-
-        isFarmer = req.body.isFarmer
-        name = req.body.name
-        phone = req.body.phone
-        email = req.body.email
-        location = req.body.location
-        pincode = req.body.pincode
-        password = req.body.password
-
-        await User.findOne({
-            email: email
-        }, async function(err, existingUser) {
-            if (existingUser) {
-
-                res.status(400).json({
-                    success: false,
-                    message: 'Bad request'
-                });
-            }
-
-            // Create and save the user if it doesn't exist
-            const user = await new Promise(async(resolve) => {
-                value = await User.create({
-                    email: email,
-                    password: password
-                })
-                if (value)
-                    resolve(value);
+            const jwtPayload = { phone: phoneNo, id: id };
+            var jwtToken = await jwt.sign(jwtPayload, config.SECRET, {
+                expiresIn: '5m' // expires in 24 hours
             });
-            if (isFarmer) {
-                localityOfDelivery = req.body.localityOfDelivery
-                const farmer = await Farmer.create({ user: user, name: name, phone: phone, email: email, location: location, pincode: pincode, localityOfDelivery: localityOfDelivery });
-            } else {
 
-                console.log(email)
-                const customer = await Customer.create({ user: user, name: name, phone: phone, email: email, location: location, pincode: pincode })
-            }
-            if (user) {
-                const jwtPayload = { name: name, id: user.id };
-                var jwtToken = await jwt.sign(jwtPayload, config.SECRET, {
-                    expiresIn: '5m' // expires in 24 hours
-                });
-                res.status(200).json({
-                    success: true,
-                    access_token: jwtToken
-                });
-            } else {
-                res.status(400).json({
-                    success: false,
-                    message: 'Bad request'
-                });
-            }
-
-        });
-
+            phoneVerification.requestPhoneVerification(phoneNo, via, async(err, response) => {
+                if (err) {
+                    logger.error(err.message);
+                    res.status(500).json({
+                        success: false,
+                        message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+                    });
+                } else {
+                    console.log('', response);
+                    res.status(200).json({
+                        success: true,
+                        access_token: jwtToken
+                    });
+                }
+            });
+        } else {
+            res.status(400).json({
+                success: false,
+                message: 'Bad request'
+            });
+        }
     } catch (error) {
         logger.error(error.message);
         res.status(500).json({
             success: false,
             message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
         });
-
     }
 }
 
-module.exports = { registerUser, getProfile, login };
+
+async function refreshToken(req, res) {
+    try {
+        phone = req.decoded.phone;
+        uid = req.decoded.id;
+
+        if (phone && uid) {
+            // Get data from the redis server
+
+            const jwtPayload = { phone: phone, id: uid };
+            const jwtToken = await jwt.sign(jwtPayload, config.SECRET, {
+                expiresIn: "7d" // expires in 24 hours
+            });
+
+
+            res.status(200).json({
+                success: true,
+                access_token: jwtToken
+            });
+        } else {
+            res.status(400).json({
+                success: false,
+                message: 'Bad token'
+            });
+        }
+    } catch (error) {
+        logger.error(error.message);
+        res.json({
+            success: false,
+            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+        });
+    }
+}
+
+
+exports.userSignin = userSignin;
+exports.userVerify = userVerify;
+exports.retry = retry;
+exports.refreshToken = refreshToken;
