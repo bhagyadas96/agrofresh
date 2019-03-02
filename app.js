@@ -13,6 +13,7 @@ const db = require('./config/_db'); // Do not delete this. This is a db connecti
 const indexRouter = require('./routes/index');
 
 const authRouter = require('./urls/auth');
+const itemListRouter = require('./urls/ItemList');
 
 
 const app = express();
@@ -29,6 +30,8 @@ app.use('/media', express.static(__dirname + '/media'));
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
+
+app.use('/itemlist', itemListRouter);
 
 
 module.exports = app;
