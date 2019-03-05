@@ -88,8 +88,7 @@ async function addToCart(req, res) {
 }
 
 function priceCalculate(price, qty) {
-    if (metric == "kg")
-        totPrice = price * qty;
+    totPrice = price * qty;
     return totPrice;
 }
 
