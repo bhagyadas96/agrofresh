@@ -1,100 +1,60 @@
-const config = require('./config');
-const cart = require('../models/cart');
+var logger = require('../config/logger');
+const ItemList = require('../models/itemList');
+const item = require('../models/item');
 
+const Cart = require('../models/cart');
+const uploadUtil = require('../util/_newsfeedUpload');
 
-class Cart {
-    static addToCart(product = null, qty = 1, cart) {
-        if (!this.inCart(product.product_id, cart)) {
-            let format = new Intl.NumberFormat(config.locale.lang, { style: 'currency', currency: config.locale.currency });
-            let prod = {
+async function getFromCart(req, res) {
+    try {
 
-                price: product.price,
-                qty: qty,
-                image: product.image,
-                formattedPrice: format.format(product.price)
-            };
-            cart.items.push(prod);
-            this.calculateTotals(cart);
-        }
-    }
+        user = req.decoded.id;
+        item = req.body.item;
+        quantity = req.body.quantity;
+        // price = req.body.price;
+        const cartitem = await ItemSchema.findById(item).exec();
 
-    static removeFromCart(id = 0, cart) {
-        for (let i = 0; i < cart.items.length; i++) {
-            let item = cart.items[i];
-            if (item.id === id) {
-                cart.items.splice(i, 1);
-                this.calculateTotals(cart);
-            }
+        if (cartitem.metric = 0) {
+            cartitem.price = cartitem.price * cartitem.quantity;
+        } else {
+            cartitem.price = (cartitem.price * cartitem.quantity) / 1000;
         }
 
-    }
-
-    static updateCart(ids = [], qtys = [], cart) {
-        let map = [];
-        let updated = false;
-
-        ids.forEach(id => {
-            qtys.forEach(qty => {
-                map.push({
-                    id: parseInt(id, 10),
-                    qty: parseInt(qty, 10)
-                });
+        if (cartitem.quantity != 0) {
+            const cart = await Cart.create({
+                customer: customer,
+                item: item,
+                metric: metric,
+                quantity: quantity,
+                price: price
             });
-        });
-        map.forEach(obj => {
-            cart.items.forEach(item => {
-                if (item.id === obj.id) {
-                    if (obj.qty > 0 && obj.qty !== item.qty) {
-                        item.qty = obj.qty;
-                        updated = true;
-                    }
+
+        } else if (cartitem.quantity = 0) {
+            const items = await cartitem.find({ item: item }).sort('price');
+            for (i = 0; i < items.length; i++) {
+                if (cartitem.quantity != 0 && cartitem.item == item) {
+                    cartitem.price = items[0];
+
+
                 }
-            });
-        });
-        if (updated) {
-            this.calculateTotals(cart);
-        }
-    }
 
-    static inCart(productID = 0, cart) {
-        let found = false;
-        cart.items.forEach(item => {
-            if (item.id === productID) {
-                found = true;
+
             }
-        });
-        return found;
-    }
-
-    static calculateTotals(cart) {
-        cart.totals = 0.00;
-        cart.items.forEach(item => {
-            let price = item.price;
-            let qty = item.qty;
-            let amount = price * qty;
-
-            cart.totals += amount;
-        });
-        this.setFormattedTotals(cart);
-    }
-
-    static emptyCart(request) {
-
-        if (request.session) {
-            request.session.cart.items = [];
-            request.session.cart.totals = 0.00;
-            request.session.cart.formattedTotals = '';
         }
 
 
-    }
+        res.status(200).json({
+            success: true,
+            data: item
+        });
+    } catch (error) {
+        logger.error(error.message);
 
-    static setFormattedTotals(cart) {
-        let format = new Intl.NumberFormat(config.locale.lang, { style: 'currency', currency: config.locale.currency });
-        let totals = cart.totals;
-        cart.formattedTotals = format.format(totals);
+        res.status(500).json({
+            success: false,
+            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+        });
     }
-
 }
 
-module.exports = Cart;
+exports.getFromCart = getFromCart;

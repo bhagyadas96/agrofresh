@@ -5,8 +5,9 @@ const timestamps = require('mongoose-timestamp');
 const CartSchema = new Schema({
     itemReference: [{ type: Schema.Types.ObjectId, ref: 'ItemSchema' }],
     customer: [{ type: Schema.Types.ObjectId, ref: 'UserSchema' }],
-    quantity: { type: Number, required: true }
-    // price: { type: Number, required: true }
+    metric: { type: String },
+    quantity: { type: Number, required: true },
+    price: { type: Number, required: true }
 });
 
 

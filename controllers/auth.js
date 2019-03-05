@@ -12,6 +12,7 @@ async function userSignin(req, res) {
         phoneNo = req.body.phone;
         name = req.body.name;
         via = req.body.via;
+        console.log(config.API_KEY)
         if (phoneNo && via && name) {
             const user = await User.findOne({ phone: phoneNo }).exec() || await User.create({ phone: phoneNo, name: name });
             if (user) {

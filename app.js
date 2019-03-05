@@ -14,6 +14,7 @@ const indexRouter = require('./routes/index');
 
 const authRouter = require('./urls/auth');
 const itemListRouter = require('./urls/ItemList');
+const cartRouter = require('./urls/cart');
 
 
 const app = express();
@@ -32,6 +33,7 @@ app.use('/', indexRouter);
 app.use('/auth', authRouter);
 
 app.use('/itemlist', itemListRouter);
+app.use('/cart', cartRouter);
 
 
 module.exports = app;

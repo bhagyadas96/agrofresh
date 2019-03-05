@@ -8,4 +8,8 @@ router.post('/', jwtUtil.verifyJWTTokenIsUser, async(req, res) => {
     controller.getItemList(req, res);
 });
 
+router.post('/search', jwtUtil.verifyJWTTokenIsUser, async(req, res) => {
+    controller.search(req, res);
+});
+
 module.exports = router;

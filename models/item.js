@@ -5,6 +5,7 @@ const timestamps = require('mongoose-timestamp');
 const ItemSchema = new Schema({
     item: { type: Schema.Types.ObjectId, ref: 'ItemList' },
     itemPrice: { type: String, required: true },
+    quantity: { type: Number, required: true },
     farmer: [{ type: Schema.Types.ObjectId, ref: 'Farmer' }]
 });
 

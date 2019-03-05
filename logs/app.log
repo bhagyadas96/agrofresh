@@ -2201,3 +2201,37 @@ Error: Cannot find module '../../models/dailyQuiz'
 {"message":"::1 - - [25/Feb/2019:06:57:48 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
 {"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:02:21 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
 {"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:02:23 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:03:26 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
+{"level":"error"}
+{"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:13:27 +0000] \"POST /itemlist/ HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"user is not defined","level":"error"}
+{"message":"::1 - - [25/Feb/2019:07:14:05 +0000] \"POST /itemlist/ HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:16:52 +0000] \"POST /itemlist/ HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:16:54 +0000] \"POST /itemlist/ HTTP/1.1\" 200 161\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:17:42 +0000] \"POST /itemlist/ HTTP/1.1\" 200 151\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:34:25 +0000] \"POST /itemlist/search?query=v HTTP/1.1\" 200 25\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:34:51 +0000] \"POST /itemlist/search?query=b HTTP/1.1\" 200 288\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:45:27 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:46:22 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:46:26 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:47:06 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:50:52 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:07:51:25 +0000] \"POST /auth/signin HTTP/1.1\" 500 186\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:08:33:32 +0000] \"POST /auth/signin HTTP/1.1\" 500 186\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:08:35:10 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:08:36:23 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:09:21:43 +0000] \"POST /cart/sreate HTTP/1.1\" 404 151\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:09:21:51 +0000] \"POST /cart/create HTTP/1.1\" 401 51\n","level":"info"}
+{"message":"Cart validation failed: quantity: Path `quantity` is required., price: Path `price` is required.","level":"error"}
+{"message":"::1 - - [25/Feb/2019:09:22:52 +0000] \"POST /cart/create HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:09:27 +0000] \"POST /auth/signin HTTP/1.1\" 500 162\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:10:30 +0000] \"POST /itemlist/ HTTP/1.1\" 200 175\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:11:05 +0000] \"POST /itemlist/search?query=b HTTP/1.1\" 200 440\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:12:15 +0000] \"POST /auth/signin HTTP/1.1\" 500 132\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:12:46 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:14:19 +0000] \"POST /auth/verify HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:14:34 +0000] \"POST /auth/verify HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:14:44 +0000] \"POST /auth/verify HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:14:54 +0000] \"POST /auth/verify HTTP/1.1\" 400 993\n","level":"info"}
+{"message":"::1 - - [27/Feb/2019:05:15:35 +0000] \"POST /auth/verify HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::ffff:192.168.225.126 - - [27/Feb/2019:07:50:10 +0000] \"POST /app-auth/signin HTTP/1.1\" 404 155\n","level":"info"}

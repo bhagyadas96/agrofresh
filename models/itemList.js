@@ -4,8 +4,8 @@ const timestamps = require('mongoose-timestamp');
 
 const ItemListSchema = new Schema({
     name: { type: String, required: true },
-    vitamins: [{ type: String, required: true }],
-    image: { type: String },
+    vitamins: { type: String, required: true },
+    image: { type: String }
 });
 
 // we need to create a model using it
