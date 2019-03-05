@@ -83,12 +83,12 @@ async function addToCart(req, res) {
     }
 }
 
-function priceCalculate(item.price, qty) {
+function priceCalculate(price, qty) {
     if (metric == "kg") {
-        totPrice = item.price * qty;
+        totPrice = price * qty;
 
     } else if (metric == "gram") {
-        totPrice = (item.price * qty) / 1000;
+        totPrice = (price * qty) / 1000;
     }
     return totPrice;
 }
@@ -100,7 +100,7 @@ async function updateCart(req, res) {
 
         if (user && ObjectId.isValid(cart)) {
 
-            //Call to calculate price
+            priceCalculate(itemObj.price, qty);
             const cartObj = await Cart.findOneAndUpdate(cart, { quantity: qty, price: price }).exec();
             res.status(200).json({
                 success: true
