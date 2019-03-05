@@ -41,8 +41,12 @@ async function addToCart(req, res) {
 
         if (user && ObjectId.isValid(item) && qty) {
             const itemObj = await Item.findById(item).exec();
-            if (itemObj.qty > 0) {
-                priceCalculate(itemObj.price, qty);
+
+            if (metric == "gm") {
+                qty = qty / 1000;
+            }
+            if (itemObj.qty > 0 && itemObj.qty >= qty) {
+                price = priceCalculate(itemObj.price, qty);
                 const cart = await Cart.create({
                     item: item,
                     quantity: qty,
@@ -55,7 +59,7 @@ async function addToCart(req, res) {
 
             } else {
                 const items = await Item.find({ item: itemObj.item, qty: { "$gte": 0 }, expire: { "$lt": new Date() } }).sort('price').exec();
-                price = items[0].price;
+                price = priceCalculate(items[0].price, qty);
 
                 const cart = await Cart.create({
                     item: items[0]._id,
@@ -83,28 +87,56 @@ async function addToCart(req, res) {
     }
 }
 
-function priceCalculate(item.price, qty) {
-    if (metric == "kg") {
-        totPrice = item.price * qty;
-
-    } else if (metric == "gram") {
-        totPrice = (item.price * qty) / 1000;
-    }
+function priceCalculate(price, qty) {
+    if (metric == "kg")
+        totPrice = price * qty;
     return totPrice;
 }
+
 async function updateCart(req, res) {
     try {
         user = req.decoded.id;
         cart = req.body.cart;
         qty = req.body.qty;
+        metric = req.body.metric;
 
         if (user && ObjectId.isValid(cart)) {
 
-            //Call to calculate price
-            const cartObj = await Cart.findOneAndUpdate(cart, { quantity: qty, price: price }).exec();
-            res.status(200).json({
-                success: true
-            });
+            const cartObj = await Cart.findById(cart).exec();
+            const itemObj = await Item.findById(cartObj.item).exec();
+
+            if (metric == "gm") {
+                qty = qty / 1000;
+            }
+
+            if (itemObj.qty > 0 && itemObj.qty >= qty) {
+
+                price = priceCalculate(itemObj.price, qty);
+                cartObj.price = price;
+                cartObj.qty = qty;
+                cartObj.metric = metric;
+                await cartObj.save();
+                res.status(200).json({
+                    success: true,
+                    data: cartObj
+                });
+
+            } else {
+
+                const items = await Item.find({ item: itemObj.item, qty: { "$gte": 0 }, expire: { "$lt": new Date() } }).sort('price').exec();
+                price = priceCalculate(items[0].price, qty);
+                cartObj.item = items[0]._id;
+                cartObj.price = price;
+                cartObj.qty = qty;
+                cartObj.metric = metric;
+                await cartObj.save();
+                res.status(200).json({
+                    success: true,
+                    data: cartObj
+                });
+
+            }
+
         } else {
             return res.status(400).send({
                 success: false,

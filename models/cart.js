@@ -8,6 +8,7 @@ const CartSchema = new Schema({
     customer: { type: Schema.Types.ObjectId, ref: 'UserSchema' },
     quantity: { type: Number, required: true },
     price: { type: Number, required: true },
+    metric: { type: String, default: "kg" },
     status: { type: Boolean, default: true },
     created_at: { type: Date, default: Date.now }
 
