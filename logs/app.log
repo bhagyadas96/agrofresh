@@ -1661,6 +1661,7 @@ Error: Cannot find module '../../models/dailyQuiz'
     at Module.require (module.js:597:17)
     at require (internal/module.js:11:18)
     at Object.<anonymous> (D:\Studywise\wise-server\app.js:28:14)
+<<<<<<< HEAD
     at Module._compile (module.js:653:30) {"error":{"code":"MODULE_NOT_FOUND"},"stack":"Error: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","exception":true,"date":"Sat Jan 05 2019 11:13:19 GMT+0530 (India Standard Time)","process":{"pid":4856,"uid":null,"gid":null,"cwd":"D:\\Studywise\\wise-server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v8.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Studywise\\wise-server\\bin\\www"],"memoryUsage":{"rss":69242880,"heapTotal":59682816,"heapUsed":39267960,"external":19503291}},"os":{"loadavg":[0,0,0],"uptime":1227237.9822643},"trace":[{"column":15,"file":"module.js","function":"Module._resolveFilename","line":548,"method":"_resolveFilename","native":false},{"column":25,"file":"module.js","function":"Module._load","line":475,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":81,"file":"D:\\Studywise\\wise-server\\util\\_quizGenerator.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":23,"file":"D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":14,"file":"D:\\Studywise\\wise-server\\app.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false}]}
 {"error":{"code":"MODULE_NOT_FOUND"},"level":"error","message":"uncaughtException: Cannot find module '../../models/dailyQuiz'\nError: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","stack":"Error: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","exception":true,"date":"Sat Jan 05 2019 11:33:48 GMT+0530 (India Standard Time)","process":{"pid":6268,"uid":null,"gid":null,"cwd":"D:\\Studywise\\wise-server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v8.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Studywise\\wise-server\\bin\\www"],"memoryUsage":{"rss":68374528,"heapTotal":59682816,"heapUsed":38193688,"external":19372120}},"os":{"loadavg":[0,0,0],"uptime":1228467.1562898},"trace":[{"column":15,"file":"module.js","function":"Module._resolveFilename","line":548,"method":"_resolveFilename","native":false},{"column":25,"file":"module.js","function":"Module._load","line":475,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":81,"file":"D:\\Studywise\\wise-server\\util\\_quizGenerator.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":23,"file":"D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":14,"file":"D:\\Studywise\\wise-server\\app.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false}]}
 {"error":{"code":"MODULE_NOT_FOUND"},"level":"error","message":"uncaughtException: Cannot find module '../../models/dailyQuiz'\nError: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","stack":"Error: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","exception":true,"date":"Sat Jan 05 2019 11:33:58 GMT+0530 (India Standard Time)","process":{"pid":11604,"uid":null,"gid":null,"cwd":"D:\\Studywise\\wise-server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v8.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Studywise\\wise-server\\bin\\www"],"memoryUsage":{"rss":68628480,"heapTotal":59158528,"heapUsed":38992160,"external":19511483}},"os":{"loadavg":[0,0,0],"uptime":1228476.7671088},"trace":[{"column":15,"file":"module.js","function":"Module._resolveFilename","line":548,"method":"_resolveFilename","native":false},{"column":25,"file":"module.js","function":"Module._load","line":475,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":81,"file":"D:\\Studywise\\wise-server\\util\\_quizGenerator.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":23,"file":"D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":14,"file":"D:\\Studywise\\wise-server\\app.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false}]}
@@ -2235,3 +2236,545 @@ Error: Cannot find module '../../models/dailyQuiz'
 {"message":"::1 - - [27/Feb/2019:05:14:54 +0000] \"POST /auth/verify HTTP/1.1\" 400 993\n","level":"info"}
 {"message":"::1 - - [27/Feb/2019:05:15:35 +0000] \"POST /auth/verify HTTP/1.1\" 200 230\n","level":"info"}
 {"message":"::ffff:192.168.225.126 - - [27/Feb/2019:07:50:10 +0000] \"POST /app-auth/signin HTTP/1.1\" 404 155\n","level":"info"}
+=======
+    at Module._compile (module.js:653:30) {"error":{"code":"MODULE_NOT_FOUND"},"stack":"Error: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","exception":true,"date":"Sat Jan 05 2019 11:13:19 GMT+0530 (India Standard Time)","process":{"pid":4856,"uid":null,"gid":null,"cwd":"D:\\Studywise\\wise-server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v8.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Studywise\\wise-server\\bin\\www"],"memoryUsage":{"rss":69242880,"heapTotal":59682816,"heapUsed":39267960,"external":19503291}},"os":{"loadavg":[0,0,0],"uptime":1227237.9822643},"trace":[{"column":15,"file":"module.js","function":"Module._resolveFilename","line":548,"method":"_resolveFilename","native":false},{"column":25,"file":"module.js","function":"Module._load","line":475,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":81,"file":"D:\\Studywise\\wise-server\\util\\_quizGenerator.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":23,"file":"D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":14,"file":"D:\\Studywise\\wise-server\\app.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false}]}
+{"error":{"code":"MODULE_NOT_FOUND"},"level":"error","message":"uncaughtException: Cannot find module '../../models/dailyQuiz'\nError: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","stack":"Error: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","exception":true,"date":"Sat Jan 05 2019 11:33:48 GMT+0530 (India Standard Time)","process":{"pid":6268,"uid":null,"gid":null,"cwd":"D:\\Studywise\\wise-server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v8.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Studywise\\wise-server\\bin\\www"],"memoryUsage":{"rss":68374528,"heapTotal":59682816,"heapUsed":38193688,"external":19372120}},"os":{"loadavg":[0,0,0],"uptime":1228467.1562898},"trace":[{"column":15,"file":"module.js","function":"Module._resolveFilename","line":548,"method":"_resolveFilename","native":false},{"column":25,"file":"module.js","function":"Module._load","line":475,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":81,"file":"D:\\Studywise\\wise-server\\util\\_quizGenerator.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":23,"file":"D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":14,"file":"D:\\Studywise\\wise-server\\app.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false}]}
+{"error":{"code":"MODULE_NOT_FOUND"},"level":"error","message":"uncaughtException: Cannot find module '../../models/dailyQuiz'\nError: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","stack":"Error: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","exception":true,"date":"Sat Jan 05 2019 11:33:58 GMT+0530 (India Standard Time)","process":{"pid":11604,"uid":null,"gid":null,"cwd":"D:\\Studywise\\wise-server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v8.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Studywise\\wise-server\\bin\\www"],"memoryUsage":{"rss":68628480,"heapTotal":59158528,"heapUsed":38992160,"external":19511483}},"os":{"loadavg":[0,0,0],"uptime":1228476.7671088},"trace":[{"column":15,"file":"module.js","function":"Module._resolveFilename","line":548,"method":"_resolveFilename","native":false},{"column":25,"file":"module.js","function":"Module._load","line":475,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":81,"file":"D:\\Studywise\\wise-server\\util\\_quizGenerator.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":23,"file":"D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":14,"file":"D:\\Studywise\\wise-server\\app.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false}]}
+{"error":{"code":"MODULE_NOT_FOUND"},"level":"error","message":"uncaughtException: Cannot find module '../../models/dailyQuiz'\nError: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","stack":"Error: Cannot find module '../../models/dailyQuiz'\n    at Function.Module._resolveFilename (module.js:548:15)\n    at Function.Module._load (module.js:475:25)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGenerator.js:1:81)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js:3:23)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)\n    at Function.Module._load (module.js:498:3)\n    at Module.require (module.js:597:17)\n    at require (internal/module.js:11:18)\n    at Object.<anonymous> (D:\\Studywise\\wise-server\\app.js:28:14)\n    at Module._compile (module.js:653:30)","exception":true,"date":"Sat Jan 05 2019 11:34:27 GMT+0530 (India Standard Time)","process":{"pid":14172,"uid":null,"gid":null,"cwd":"D:\\Studywise\\wise-server","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v8.12.0","argv":["C:\\Program Files\\nodejs\\node.exe","D:\\Studywise\\wise-server\\bin\\www"],"memoryUsage":{"rss":67559424,"heapTotal":59682816,"heapUsed":37838760,"external":19325737}},"os":{"loadavg":[0,0,0],"uptime":1228506.1839813},"trace":[{"column":15,"file":"module.js","function":"Module._resolveFilename","line":548,"method":"_resolveFilename","native":false},{"column":25,"file":"module.js","function":"Module._load","line":475,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":81,"file":"D:\\Studywise\\wise-server\\util\\_quizGenerator.js","function":null,"line":1,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":23,"file":"D:\\Studywise\\wise-server\\util\\_quizGeneratorTask.js","function":null,"line":3,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false},{"column":12,"file":"module.js","function":"tryModuleLoad","line":506,"method":null,"native":false},{"column":3,"file":"module.js","function":"Module._load","line":498,"method":"_load","native":false},{"column":17,"file":"module.js","function":"Module.require","line":597,"method":"require","native":false},{"column":18,"file":"internal/module.js","function":"require","line":11,"method":null,"native":false},{"column":14,"file":"D:\\Studywise\\wise-server\\app.js","function":null,"line":28,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false}]}
+{"level":"error"}
+{"message":"::1 - - [05/Jan/2019:06:05:00 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"DailyQuiz is not defined","level":"error"}
+{"message":"::ffff:127.0.0.1 - - [05/Jan/2019:06:05:31 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error"}
+{"message":"::1 - - [05/Jan/2019:06:26:23 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error"}
+{"message":"::ffff:127.0.0.1 - - [05/Jan/2019:06:26:55 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error"}
+{"message":"::1 - - [05/Jan/2019:06:27:22 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error","message":"DailyQuiz is not defined"}
+{"message":"::1 - - [05/Jan/2019:06:28:00 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error"}
+{"message":"::1 - - [05/Jan/2019:06:28:32 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error"}
+{"message":"::ffff:127.0.0.1 - - [05/Jan/2019:06:29:06 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error"}
+{"message":"::1 - - [05/Jan/2019:06:29:35 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"level":"error","message":"DailyQuiz is not defined"}
+{"message":"::ffff:127.0.0.1 - - [05/Jan/2019:06:30:03 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:06:31:59 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 200 9478\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:03:34 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:08:51 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:10:08 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:29:29 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:29:37 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:29:42 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:34:36 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:38:09 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:38:20 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:38:34 +0000] \"DELETE /mcq-question/remove/5bf04ebc951d68406034397a HTTP/1.1\" 401 55\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:38:48 +0000] \"DELETE /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 404 186\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:44:03 +0000] \"DELETE /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 404 186\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:44:25 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 4\n","level":"info"}
+{"level":"error"}
+{"message":"::1 - - [05/Jan/2019:07:44:48 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:45:29 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 200 9478\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:46:25 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:46:27 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:48:49 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:49:23 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 443\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:49:42 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 435\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:51:03 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 435\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:51:12 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 435\n","level":"info"}
+{"message":"::1 - - [05/Jan/2019:07:51:24 +0000] \"PUT /mcq-question/update/5bf04ebc951d68406034397a HTTP/1.1\" 200 435\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:13:20 +0000] \"GET /app-auth/refresh_token HTTP/1.1\" 400 39\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:14:04 +0000] \"GET /daily-quiz/5c303fcf1037d5459404db8c HTTP/1.1\" 200 9470\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:14:21 +0000] \"POST /app-auth/signin HTTP/1.1\" 200 233\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:14:45 +0000] \"POST /app-auth/verify HTTP/1.1\" 200 72\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:15:05 +0000] \"POST /app-auth/verify HTTP/1.1\" 200 451\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:16:35 +0000] \"GET /newsfeed/ HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:17:16 +0000] \"GET /newsfeed/list HTTP/1.1\" 400 63\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:17:26 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 26\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:20:08 +0000] \"POST /newsfeed/post/text HTTP/1.1\" 401 51\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:20:20 +0000] \"POST /newsfeed/post/text HTTP/1.1\" 200 339\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:22:02 +0000] \"POST /newsfeed/post/text HTTP/1.1\" 200 339\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:25:14 +0000] \"POST /newsfeed/post/mcq HTTP/1.1\" 200 520\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:25:38 +0000] \"POST /newsfeed/post/mcq HTTP/1.1\" 200 520\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:02:29:10 +0000] \"POST /newsfeed/post/mcq HTTP/1.1\" 200 520\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:02:29:29 +0000] \"POST /newsfeed/post/mcq HTTP/1.1\" 200 519\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:02:29:39 +0000] \"POST /newsfeed/post/mcq HTTP/1.1\" 200 520\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:12:47 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1515\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:14:03 +0000] \"PUT /newsfeed/comment HTTP/1.1\" 400 41\n","level":"info"}
+{"level":"error","message":"mcq is not defined"}
+{"message":"::1 - - [06/Jan/2019:06:14:15 +0000] \"PUT /newsfeed/comment HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:15:29 +0000] \"PUT /newsfeed/comment HTTP/1.1\" 200 387\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:15:40 +0000] \"PUT /newsfeed/comment HTTP/1.1\" 200 525\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:16:13 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1790\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:17:34 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1293\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:18:05 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1162\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:20:27 +0000] \"PUT /newsfeed/like HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:21:19 +0000] \"PUT /newsfeed/like HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:22:00 +0000] \"PUT /newsfeed/like HTTP/1.1\" 400 41\n","level":"info"}
+{"level":"error"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:06:22:24 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"level":"error","message":"answers is not defined"}
+{"message":"::1 - - [06/Jan/2019:06:23:02 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"level":"error","message":"answers is not defined"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:06:23:18 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:24:13 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 43\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:24:25 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1162\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:24:45 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1162\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:24:53 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 43\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:06:25:18 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 43\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:06:25:19 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 43\n","level":"info"}
+{"level":"error","message":"Assignment to constant variable."}
+{"message":"::1 - - [06/Jan/2019:06:25:48 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:26:37 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 43\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:26:59 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1188\n","level":"info"}
+{"level":"error","message":"newsfeedMasterUpdate is not defined"}
+{"message":"::1 - - [06/Jan/2019:06:45:04 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:46:03 +0000] \"PUT /newsfeed/like HTTP/1.1\" - -\n","level":"info"}
+{"level":"error","message":"NewsfeedMaster validation failed: likes.0: Path `likes` is required."}
+{"message":"::1 - - [06/Jan/2019:06:46:45 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"level":"error","message":"NewsfeedMaster validation failed: likes.0: Path `likes` is required."}
+{"message":"::1 - - [06/Jan/2019:06:47:45 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"level":"error","message":"NewsfeedMaster validation failed: likes.0: Path `likes` is required."}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:06:48:00 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:49:03 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 526\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:49:24 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 553\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:51:29 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 526\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:58:34 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 522\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:58:37 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 522\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:58:39 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 522\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:06:59:19 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:00:32 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 549\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:00:35 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:00:36 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 549\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:00:38 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:00:40 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 549\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:01:00 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:02:50 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 549\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:07:00 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:08:58 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 549\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:10:36 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:10:39 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 549\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:12:07 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"level":"error","message":"newsfeedMasterUpdate._doc.toObject is not a function"}
+{"message":"::1 - - [06/Jan/2019:07:12:08 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:13:09 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"level":"error","message":"Cannot read property 'toObject' of undefined"}
+{"message":"::1 - - [06/Jan/2019:07:13:10 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:07:14:26 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 523\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:07:14:30 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 562\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:14:47 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 537\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:14:50 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 562\n","level":"info"}
+{"level":"error","message":"newsfeedMaster.save(...).toObject is not a function"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:07:15:02 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 108\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [06/Jan/2019:07:15:16 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 562\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:16:04 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 537\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:18:51 +0000] \"POST /newsfeed/post/mcq HTTP/1.1\" 200 519\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:23:24 +0000] \"PUT /newsfeed/like HTTP/1.1\" 400 1050\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:23:32 +0000] \"PUT /newsfeed/like HTTP/1.1\" 200 562\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:32:38 +0000] \"PUT /newsfeed/list?page=1&size=3 HTTP/1.1\" 404 152\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:07:32:51 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1189\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:15:57:25 +0000] \"GET /newsfeed/comment HTTP/1.1\" 404 155\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:15:57:35 +0000] \"PUT /newsfeed/comment HTTP/1.1\" 200 72\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:15:59:45 +0000] \"GET /newsfeed/list?page=1&size=3 HTTP/1.1\" 200 1189\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:16:00:25 +0000] \"PUT /newsfeed/comment HTTP/1.1\" 400 1049\n","level":"info"}
+{"message":"::1 - - [06/Jan/2019:16:00:34 +0000] \"PUT /newsfeed/comment HTTP/1.1\" 200 387\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:15:46 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbhxQ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:15:47 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbi6v HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:15:49 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbimK HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:15:50 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbj0D HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:15:53 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbjaz HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:15:58 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbkpI HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:03 +0000] \"GET / HTTP/1.1\" 200 278\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:04 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:04 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 200 119\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:05 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:13 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMboWl HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:14 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbomQ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:15 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbp8J HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:20 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbqMb HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:25 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbrau HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:30 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbspB HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:35 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbu1f HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:40 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbvF_ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:45 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbwUJ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:50 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbxic HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:16:56 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMbyx5 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:22 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc3MM HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:23 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc3kS HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:25 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc41I HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:26 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc4Oc HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:27 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc4jJ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:32 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc5xm HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:37 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc7AC HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:42 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc8Oa HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:48 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMc9rx HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:17:56 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcBZI HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:02 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcDGf HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:09 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcE-2 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:16 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcGhP HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:23 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcIOo HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:30 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcK69 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:37 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcLpX HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:44 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcNWv HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:52 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcPFM HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:18:58 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcQxf HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:05 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcSf1 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:12 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcUMP HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:19 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcW3n HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:26 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcXn9 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:33 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcZUX HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:40 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcbBw HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:47 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMccvH HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:19:54 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcecf HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:20:01 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcgK1 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:20:08 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMci1P HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:20:24 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMclxQ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:20:25 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcm74 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:20:26 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcmJk HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:20:29 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcm-l HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:20:31 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MXMcnYT HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:22:26 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:22:26 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [16/Jan/2019:12:22:26 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:45:39 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:45:39 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:45:39 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 200 119\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:45:39 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:25 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:25 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:25 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:46 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8YPC HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:47 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8Yj9 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:49 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8Z1L HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:50 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8ZNG HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:55 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8aV- HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:56 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8awT HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:46:57 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8bC6 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:00 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8bsr HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:04 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8cpi HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:09 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8e26 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:14 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8fGX HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:19 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8gUx HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:24 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8hjR HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:29 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8ixr HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:34 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8kAF HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:39 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8lOf HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:44 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8mdp HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:49 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8nsG HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:54 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8p4g HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:47:59 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8qJ7 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:04 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8rXZ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:09 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8sl- HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:22 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8vdn HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:23 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8w1f HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:24 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8wQs HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:30 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8xlW HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:37 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8zSu HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:44 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF8_AJ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:51 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF90tf HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:48:58 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF92b1 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:05 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF94IP HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:12 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF95_n HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:19 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF97jA HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:26 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF99QX HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:33 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9B7v HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:40 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9CrJ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:47 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9EYf HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:49:54 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9GG1 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:01 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9HzP HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:08 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9Jgm HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:15 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9LO9 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:22 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9N5Y HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:29 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9Oov HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:36 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9QWH HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:43 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9SDf HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:50 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9Tx1 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:51 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9UD0 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:52 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9UMW HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:53 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9Uih HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:54 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9V2u HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:50:57 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9VbC HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:51:01 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9Wk5 HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:11:51:06 +0000] \"GET /socket.io/?EIO=3&transport=polling&t=MYF9XyU HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:00:57 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:00:57 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:00:57 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:00:58 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:01:19 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:01:20 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:01:20 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:01:59 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:01:59 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [27/Jan/2019:12:01:59 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:08:08:48 +0000] \"POST /app-auth/signin HTTP/1.1\" 200 233\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:08:10:35 +0000] \"POST /app-auth/signin HTTP/1.1\" 200 233\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:08:11:33 +0000] \"POST /app-auth/verify HTTP/1.1\" 401 51\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:08:12:14 +0000] \"POST /app-auth/verify HTTP/1.1\" 200 451\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:37:17 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:37:17 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:37:17 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 200 119\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:37:18 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:53:00 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:53:00 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:53:00 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 200 119\n","level":"info"}
+{"message":"::1 - - [30/Jan/2019:09:53:01 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:09:35:02 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:09:35:02 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:09:35:02 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 200 119\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:09:35:02 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:09:35:13 +0000] \"GET /auth/register HTTP/1.1\" 404 152\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:10:52:55 +0000] \"GET /auth/ HTTP/1.1\" 404 144\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:10:53:04 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:10:53:04 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [04/Feb/2019:10:53:04 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:14:50:24 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:14:50:25 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:14:50:25 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 200 119\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:14:50:25 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:15:06 +0000] \"POST / HTTP/1.1\" 404 140\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:15:28 +0000] \"GET / HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:15:28 +0000] \"GET /stylesheets/style.css HTTP/1.1\" 304 -\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:15:28 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:15:49 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:15:59 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:16:09 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:17:03 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:17:40 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:17:50 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:18:11 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:18:37 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:32:41 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:53:18 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:53:25 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:53:37 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:54:03 +0000] \"POST / HTTP/1.1\" 404 140\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:54:10 +0000] \"POST / HTTP/1.1\" 404 140\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:58:43 +0000] \"POST / HTTP/1.1\" 404 140\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:58:52 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:59:00 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:59:06 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:59:15 +0000] \"PUT /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:59:21 +0000] \"PATCH /register HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:59:28 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:15:59:33 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:14:15 +0000] \"POST / HTTP/1.1\" 404 140\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:14:23 +0000] \"POST / HTTP/1.1\" 404 140\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:14:28 +0000] \"POST / HTTP/1.1\" 404 140\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:14:34 +0000] \"GET / HTTP/1.1\" 200 280\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:14:44 +0000] \"GET /Images/1541343587815_2018-03-10_21h30_41.png HTTP/1.1\" 404 183\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:15:03 +0000] \"GET /register/ HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:15:07 +0000] \"GET /register HTTP/1.1\" 404 147\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:15:15 +0000] \"POST /register HTTP/1.1\" 404 148\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:15:20 +0000] \"POST /register/ HTTP/1.1\" 404 149\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:16:56:33 +0000] \"POST /auth/register HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:17:01:22 +0000] \"POST /auth/register HTTP/1.1\" - -\n","level":"info"}
+{"level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:17:38 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"mailId is not defined","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:19:36 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Customer validation failed: phone: Path `phone` is required.","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:21:21 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Customer validation failed: phone: Path `phone` is required.","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:23:26 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Customer validation failed: phone: Path `phone` is required.","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:33:43 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Customer validation failed: phone: Path `phone` is required.","level":"error"}
+{"message":"Customer validation failed: phone: Path `phone` is required.","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:38:39 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:17:38:57 +0000] \"POST /auth/register HTTP/1.1\" 400 999\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:17:39:32 +0000] \"POST /auth/register HTTP/1.1\" 400 999\n","level":"info"}
+{"message":"::1 - - [06/Feb/2019:17:41:00 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:48:38 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:48:46 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:50:15 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:51:56 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:53:46 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:54:12 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:17:58:51 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:18:00:00 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:18:06:20 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:18:08:32 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"mail is not defined","level":"error"}
+{"message":"::1 - - [06/Feb/2019:18:11:32 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"mail is not defined","level":"error"}
+{"message":"::1 - - [06/Feb/2019:18:12:31 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"mail is not defined","level":"error"}
+{"message":"::1 - - [06/Feb/2019:18:13:45 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [06/Feb/2019:18:15:06 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [07/Feb/2019:13:52:35 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"user is not defined","level":"error"}
+{"message":"::1 - - [07/Feb/2019:14:21:28 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [07/Feb/2019:14:22:30 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:50:03 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:50:42 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::ffff:127.0.0.1 - - [08/Feb/2019:03:51:40 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:52:37 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:53:10 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:53:39 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:54:20 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:54:37 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:03:56:48 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:57:26 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::ffff:127.0.0.1 - - [08/Feb/2019:03:58:53 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:03:59:06 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:04:35 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:06:11 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:08:07 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:08:20 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:08:35 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:08:58 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:09:18 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:09:41 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:10:06 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:19:39 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:20:46 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"E11000 duplicate key error collection: StudyWise.customers index: mail_id_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:21:24 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"user is not defined","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:24:24 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [08/Feb/2019:04:24:50 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"user is not defined","level":"error"}
+{"message":"user is not defined","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:25:01 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Customer validation failed: user: Cast to ObjectID failed for value \"\" at path \"user\"","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:30:02 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:31:37 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"Customer validation failed: user: Cast to ObjectID failed for value \"\" at path \"user\"","level":"error"}
+{"message":"Customer validation failed: user: Cast to ObjectID failed for value \"\" at path \"user\"","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:31:50 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Customer validation failed: user: Cast to ObjectID failed for value \"\" at path \"user\"","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:32:17 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Customer validation failed: user: Cast to ObjectID failed for value \"\" at path \"user\"","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:32:54 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:33:16 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"Customer validation failed: user: Cast to ObjectID failed for value \"\" at path \"user\"","level":"error"}
+{"message":"Customer validation failed: user: Cast to ObjectID failed for value \"\" at path \"user\"","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:33:29 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"userObject is not defined","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:35:18 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"user is not defined","level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:35:48 +0000] \"POST /auth/register HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:39:30 +0000] \"POST /auth/register HTTP/1.1\" 200 227\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:40:21 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:40:36 +0000] \"POST /auth/register HTTP/1.1\" 200 227\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:48:58 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:04:51:47 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"level":"error"}
+{"message":"::1 - - [08/Feb/2019:04:56:31 +0000] \"POST /auth/login HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:01:10 +0000] \"POST /auth/register HTTP/1.1\" 200 227\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:01:44 +0000] \"GET /auth/login HTTP/1.1\" 404 149\n","level":"info"}
+{"level":"error"}
+{"message":"::ffff:127.0.0.1 - - [08/Feb/2019:05:02:02 +0000] \"GET /auth/login HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"::1 - - [08/Feb/2019:05:02:38 +0000] \"GET /auth/login HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [08/Feb/2019:05:03:28 +0000] \"GET /auth/login HTTP/1.1\" 200 194\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:03:37 +0000] \"GET /auth/login HTTP/1.1\" 200 74\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:03:45 +0000] \"GET /auth/login HTTP/1.1\" 200 194\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:08:40 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:08:53 +0000] \"POST /auth/register HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:09:05 +0000] \"POST /auth/register HTTP/1.1\" 200 223\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:05:09:36 +0000] \"GET /auth/login HTTP/1.1\" 200 190\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:18:17 +0000] \"POST /auth/login HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:19:58 +0000] \"GET /auth/getprofile HTTP/1.1\" 200 72\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:23:59 +0000] \"GET /auth/getprofile HTTP/1.1\" 200 72\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:24:25 +0000] \"POST /auth/register HTTP/1.1\" 200 223\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:24:56 +0000] \"GET /auth/getprofile HTTP/1.1\" 200 190\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:25:13 +0000] \"GET /auth/login HTTP/1.1\" 401 51\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:30:07 +0000] \"POST /auth/login HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:33:03 +0000] \"GET /auth/login HTTP/1.1\" 401 51\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:33:14 +0000] \"POST /auth/login HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:06:34:34 +0000] \"POST /auth/login HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:07:06:50 +0000] \"POST /auth/login HTTP/1.1\" 401 51\n","level":"info"}
+{"message":"Cannot read property 'id' of undefined","level":"error"}
+{"message":"::1 - - [08/Feb/2019:07:07:50 +0000] \"POST /auth/login HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"user.verifyPassword is not a function","level":"error"}
+{"message":"::ffff:127.0.0.1 - - [08/Feb/2019:07:10:21 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"user.verifyPassword is not a function","level":"error"}
+{"message":"::1 - - [08/Feb/2019:07:11:32 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:07:11:50 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:07:12:00 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:07:14:48 +0000] \"POST /auth/login HTTP/1.1\" 200 205\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:08:50 +0000] \"POST /auth/login HTTP/1.1\" 200 205\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:08:57 +0000] \"POST /auth/login HTTP/1.1\" 200 205\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:09:56 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:11:05 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:11:08 +0000] \"POST /auth/login HTTP/1.1\" 200 205\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:11:17 +0000] \"POST /auth/login HTTP/1.1\" 200 205\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:13:21 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:13:45 +0000] \"GET /auth/getprofile HTTP/1.1\" 401 72\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:14:31 +0000] \"POST /auth/login HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:14:33 +0000] \"POST /auth/login HTTP/1.1\" 200 205\n","level":"info"}
+{"message":"::1 - - [08/Feb/2019:08:15:18 +0000] \"GET /auth/getprofile HTTP/1.1\" 401 74\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:04:49:09 +0000] \"POST /auth/signin HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:04:49:38 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:04:50:30 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:04:51:29 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:05:00:09 +0000] \"POST /auth/signin HTTP/1.1\" 500 124\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:05:00:34 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:05:01:05 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:06:07:26 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 404 157\n","level":"info"}
+{"message":"::ffff:192.168.225.172 - - [25/Feb/2019:06:09:09 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 404 157\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:14:00 +0000] \"GET /ItemList/itemlist HTTP/1.1\" 404 156\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:14:00 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:16:45 +0000] \"POST /auth/signin HTTP/1.1\" 400 41\n","level":"info"}
+{"driver":true,"name":"MongoError","index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: Agrofresh.users index: email_1 dup key: { : null }","level":"error"}
+{"message":"::1 - - [25/Feb/2019:06:18:28 +0000] \"POST /auth/signin HTTP/1.1\" 500 109\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:27:21 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:28:35 +0000] \"POST /auth/verify HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:29:18 +0000] \"POST /auth/verify HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:29:29 +0000] \"POST /auth/verify HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:33:29 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 404 157\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:35:44 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 413 1640\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:37:17 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 413 1640\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:38:09 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 413 1640\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:48:13 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 413 1640\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:49:18 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 413 1640\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:49:48 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 413 1640\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:50:04 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:50:43 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:50:48 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [25/Feb/2019:06:54:50 +0000] \"POST /ItemList/itemlist HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:55:08 +0000] \"POST /itemlist/itemlist HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:55:25 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::1 - - [25/Feb/2019:06:57:48 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:02:21 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:02:23 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
+>>>>>>> adb09e1142e3d558d650a9693613054c6f21a52f

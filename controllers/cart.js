@@ -1,55 +1,29 @@
 var logger = require('../config/logger');
-const ItemList = require('../models/itemList');
-const item = require('../models/item');
-
+var ObjectId = require('mongoose').Types.ObjectId;
 const Cart = require('../models/cart');
-const uploadUtil = require('../util/_newsfeedUpload');
+const Item = require('../models/item');
 
-async function getFromCart(req, res) {
+
+
+async function getCart(req, res) {
+
     try {
-
         user = req.decoded.id;
-        item = req.body.item;
-        quantity = req.body.quantity;
-        // price = req.body.price;
-        const cartitem = await ItemSchema.findById(item).exec();
-
-        if (cartitem.metric = 0) {
-            cartitem.price = cartitem.price * cartitem.quantity;
-        } else {
-            cartitem.price = (cartitem.price * cartitem.quantity) / 1000;
-        }
-
-        if (cartitem.quantity != 0) {
-            const cart = await Cart.create({
-                customer: customer,
-                item: item,
-                metric: metric,
-                quantity: quantity,
-                price: price
+        if (user) {
+            const cart = await Cart.find({ customer: user, status: true }).populate('item').exec();
+            res.status(200).json({
+                success: true,
+                data: cart
             });
+        } else {
+            res.status(400).json({
+                success: false,
+                message: 'Bad request'
 
-        } else if (cartitem.quantity = 0) {
-            const items = await cartitem.find({ item: item }).sort('price');
-            for (i = 0; i < items.length; i++) {
-                if (cartitem.quantity != 0 && cartitem.item == item) {
-                    cartitem.price = items[0];
-
-
-                }
-
-
-            }
+            });
         }
-
-
-        res.status(200).json({
-            success: true,
-            data: item
-        });
     } catch (error) {
         logger.error(error.message);
-
         res.status(500).json({
             success: false,
             message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
@@ -57,4 +31,121 @@ async function getFromCart(req, res) {
     }
 }
 
-exports.getFromCart = getFromCart;
+async function addToCart(req, res) {
+
+    try {
+        user = req.decoded.id;
+        item = req.body.item;
+        qty = req.body.qty;
+        metric = req.body.metric;
+
+        if (user && ObjectId.isValid(item) && qty) {
+            const itemObj = await Item.findById(item).exec();
+            if (itemObj.qty > 0) {
+                priceCalculate(itemObj.price, qty);
+                const cart = await Cart.create({
+                    item: item,
+                    quantity: qty,
+                    price: price
+                });
+                res.status(200).json({
+                    success: true,
+                    data: cart
+                });
+
+            } else {
+                const items = await Item.find({ item: itemObj.item, qty: { "$gte": 0 }, expire: { "$lt": new Date() } }).sort('price').exec();
+                price = items[0].price;
+
+                const cart = await Cart.create({
+                    item: items[0]._id,
+                    quantity: qty,
+                    price: price
+                });
+                res.status(200).json({
+                    success: true,
+                    data: cart
+                });
+
+            }
+        } else {
+            return res.status(400).send({
+                success: false,
+                message: 'Bad request'
+            });
+        }
+    } catch (error) {
+        logger.error(error.message);
+        res.status(500).json({
+            success: false,
+            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+        });
+    }
+}
+
+function priceCalculate(item.price, qty) {
+    if (metric == "kg") {
+        totPrice = item.price * qty;
+
+    } else if (metric == "gram") {
+        totPrice = (item.price * qty) / 1000;
+    }
+    return totPrice;
+}
+async function updateCart(req, res) {
+    try {
+        user = req.decoded.id;
+        cart = req.body.cart;
+        qty = req.body.qty;
+
+        if (user && ObjectId.isValid(cart)) {
+
+            //Call to calculate price
+            const cartObj = await Cart.findOneAndUpdate(cart, { quantity: qty, price: price }).exec();
+            res.status(200).json({
+                success: true
+            });
+        } else {
+            return res.status(400).send({
+                success: false,
+                message: 'Bad request'
+            });
+        }
+
+    } catch (error) {
+        logger.error(error.message);
+        res.status(500).json({
+            success: false,
+            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+        });
+    }
+}
+
+async function deleteCart(req, res) {
+
+    try {
+        user = req.decoded.id;
+        cart = req.body.cart;
+
+        if (user && ObjectId.isValid(cart)) {
+            const cartObj = await Cart.findByIdAndDelete(cart).exec();
+            res.status(200).json({
+                success: true
+            });
+        } else {
+            return res.status(400).send({
+                success: false,
+                message: 'Bad request'
+            });
+        }
+
+    } catch (error) {
+        logger.error(error.message);
+        res.status(500).json({
+            success: false,
+            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+        });
+    }
+}
+
+module.exports = { getCart, addToCart, deleteCart, updateCart }

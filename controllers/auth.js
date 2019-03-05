@@ -126,7 +126,6 @@ async function retry(req, res) {
                         message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
                     });
                 } else {
-                    console.log('', response);
                     res.status(200).json({
                         success: true,
                         access_token: jwtToken
