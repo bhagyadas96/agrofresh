@@ -2778,3 +2778,4 @@ Error: Cannot find module '../../models/dailyQuiz'
 {"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:02:21 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
 {"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:02:23 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
 >>>>>>> adb09e1142e3d558d650a9693613054c6f21a52f
+{"message":"::1 - - [08/Mar/2019:16:52:01 +0000] \"POST /itemlist/search?query=b HTTP/1.1\" 401 72\n","level":"info"}
