@@ -54,6 +54,32 @@ async function deleteItem(req, res) {
     }
 }
 
+async function updateItem(req, res) {
+    try {
+        farmer = req.decoded.id;
+        item = req.body.item;
+
+        if (farmer && ObjectId.isValid(item)) {
+            const itemObj = await Item.findByIdAndUpdate(item).exec();
+            res.status(200).json({
+                success: true
+            });
+        } else {
+            return res.status(400).send({
+                success: false,
+                message: 'Bad request'
+            });
+        }
+    } catch (error) {
+        logger.error(error.message);
+        res.status(500).json({
+            success: false,
+            message: "Yikes! An error occured, we are sending expert monkeys to handle the situation "
+        });
+    }
+}
+
 
 module.exports = addItem;
 module.exports = deleteItem;
+module.exports = updateItem;
