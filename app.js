@@ -13,9 +13,9 @@ const db = require('./config/_db'); // Do not delete this. This is a db connecti
 const indexRouter = require('./routes/index');
 
 const authRouter = require('./urls/auth');
-const itemListRouter = require('./urls/ItemList');
+const itemListRouter = require('./urls/itemList');
 const cartRouter = require('./urls/cart');
-
+const itemRouter = require('./urls/item')
 
 const app = express();
 app.use(cors());

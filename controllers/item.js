@@ -7,15 +7,15 @@ async function addItem(req, res) {
     price = req.body.price;
     qty = req.body.qty;
     expire = req.body.expire;
-    const farmer = await Farmer.findOne({ _id: req.decoded.id, }).exec()
+    const farmer = await Farmer.findOne({ _id: req.decoded.id, }).exec();
     try {
         if (item && price && qty && expire && farmer) {
             return res.status(400).send({ sucess: false });
         }
-        const items = await Item.create({ item: item, price: price, qty: qty, expire: expire });
+        const items = await Item.create({ item: item, price: price, qty: qty, expire: expire, farmer: farmer });
         res.status(200).json({
             success: true,
-            data: educationLevel
+            data: items
         });
     } catch (error) {
         logger.error(error);
@@ -60,7 +60,7 @@ async function updateItem(req, res) {
         item = req.body.item;
 
         if (farmer && ObjectId.isValid(item)) {
-            const itemObj = await Item.findByIdAndUpdate(item).exec();
+            const itemObj = await Item.findByIdAndUpdate(item, req.body).exec();
             res.status(200).json({
                 success: true
             });

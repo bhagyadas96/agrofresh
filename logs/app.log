@@ -2779,3 +2779,22 @@ Error: Cannot find module '../../models/dailyQuiz'
 {"message":"::ffff:127.0.0.1 - - [25/Feb/2019:07:02:23 +0000] \"POST /itemlist/ HTTP/1.1\" 400 1098\n","level":"info"}
 >>>>>>> adb09e1142e3d558d650a9693613054c6f21a52f
 {"message":"::1 - - [08/Mar/2019:16:52:01 +0000] \"POST /itemlist/search?query=b HTTP/1.1\" 401 72\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:14:31:41 +0000] \"POST /auth/signin HTTP/1.1\" - -\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:14:56:09 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:14:57:18 +0000] \"POST /app-auth/verify HTTP/1.1\" 400 1029\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:14:57:34 +0000] \"POST /app-auth/verify HTTP/1.1\" 404 155\n","level":"info"}
+{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error"}
+{"message":"::1 - - [11/Mar/2019:14:57:47 +0000] \"POST /auth/verify HTTP/1.1\" 200 109\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:01:30 +0000] \"POST /auth/verify HTTP/1.1\" 400 41\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:01:52 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:02:29 +0000] \"POST /auth/verify HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:10:57 +0000] \"POST /auth/signin HTTP/1.1\" 200 230\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:21:05 +0000] \"POST /itemlist/ HTTP/1.1\" 200 26\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:22:41 +0000] \"POST /itemlist/ HTTP/1.1\" 200 143\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:23:32 +0000] \"POST /itemlist/ HTTP/1.1\" 200 163\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:23:54 +0000] \"POST /itemlist/ HTTP/1.1\" 200 140\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:24:41 +0000] \"POST /itemlist/ HTTP/1.1\" 200 150\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:25:55 +0000] \"GET /itemlist/search HTTP/1.1\" 404 154\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:26:09 +0000] \"GET /itemlist/search HTTP/1.1\" 404 154\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [11/Mar/2019:15:26:23 +0000] \"GET /itemlist/search HTTP/1.1\" 200 529\n","level":"info"}
+{"message":"::1 - - [11/Mar/2019:15:26:43 +0000] \"GET /media/1552317812556_cucumber_madras_vellarikka_.jpg HTTP/1.1\" 200 42491\n","level":"info"}
