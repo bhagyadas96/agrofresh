@@ -34,7 +34,7 @@ app.use('/auth', authRouter);
 
 app.use('/itemlist', itemListRouter);
 app.use('/cart', cartRouter);
-app.use('/item', itemRouter);
+//app.use('/item', itemRouter);
 
 
 module.exports = app;

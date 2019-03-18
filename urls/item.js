@@ -12,6 +12,10 @@ router.post('/delete', jwtUtil.verifyJWTTokenIsUser, async(req, res) => {
     controller.deleteItem(req, res);
 });
 
+router.post('/update', jwtUtil.verifyJWTTokenIsUser, async(req, res) => {
+    controller.updateItem(req, res);
+});
+
 
 
 module.exports = router;
