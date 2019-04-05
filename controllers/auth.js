@@ -55,7 +55,7 @@ async function userVerify(req, res) {
         token = req.body.otp;
         phone = req.decoded.phone;
         const user = await User.findOne({ _id: req.decoded.id, }).exec()
-        if (token && user) {
+        if (token) {
             phoneVerification.verifyPhoneToken(phone, token, async(err, response) => {
                 if (err) {
 

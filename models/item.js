@@ -7,7 +7,7 @@ const ItemSchema = new Schema({
     price: { type: Number, required: true },
     qty: { type: Number, required: true },
     expire: { type: Date, required: true },
-    farmer: [{ type: Schema.Types.ObjectId, ref: 'Farmer' }]
+    farmer: { type: Schema.Types.ObjectId, ref: 'Farmer' }
 });
 
 // we need to create a model using it

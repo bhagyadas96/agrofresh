@@ -13,9 +13,10 @@ const db = require('./config/_db'); // Do not delete this. This is a db connecti
 const indexRouter = require('./routes/index');
 
 const authRouter = require('./urls/auth');
-const itemListRouter = require('./urls/ItemList');
+const itemListRouter = require('./urls/itemList');
 const cartRouter = require('./urls/cart');
-
+const itemRouter = require('./urls/item');
+const profileRouter = require('./urls/profile');
 
 const app = express();
 app.use(cors());
@@ -34,7 +35,8 @@ app.use('/auth', authRouter);
 
 app.use('/itemlist', itemListRouter);
 app.use('/cart', cartRouter);
-//app.use('/item', itemRouter);
+app.use('/item', itemRouter);
+app.use('/profile', profileRouter);
 
 
 module.exports = app;

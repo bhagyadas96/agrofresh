@@ -45,6 +45,7 @@ async function addToCart(req, res) {
             if (metric == "gm") {
                 qty = qty / 1000;
             }
+
             if (itemObj.qty > 0 && itemObj.qty >= qty) {
                 price = priceCalculate(itemObj.price, qty);
                 const cart = await Cart.create({
@@ -58,6 +59,7 @@ async function addToCart(req, res) {
                 });
 
             } else {
+
                 const items = await Item.find({ item: itemObj.item, qty: { "$gte": 0 }, expire: { "$lt": new Date() } }).sort('price').exec();
                 price = priceCalculate(items[0].price, qty);
 
@@ -94,6 +96,7 @@ function priceCalculate(price, qty) {
 
 async function updateCart(req, res) {
     try {
+
         user = req.decoded.id;
         cart = req.body.cart;
         qty = req.body.qty;
